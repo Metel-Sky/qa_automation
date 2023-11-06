@@ -1,11 +1,12 @@
 from selenium import webdriver
-import time
+from selenium.webdriver.common.by import By
 
-brouser = webdriver.Chrome()
+browser = webdriver.Chrome()
 
-brouser.get("https://www.qa-practice.com/elements/button/simple")
+browser.get("https://www.qa-practice.com/elements/button/simple")
+
+browser.find_element(By.ID, "submit-id-submit")
 
 
 
-
-sleep(5)
+# sleep(5)
