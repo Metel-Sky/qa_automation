@@ -23,6 +23,23 @@ browser.get("https://www.qa-practice.com/elements/button/simple")
 
 
 sleep(1)
-browser.find_element(By.LINK_TEXT, "Contact").click() # знаходить ссилку по тексту, але
-                                                            #  без збереження у змінну
+#browser.find_element(By.LINK_TEXT, "Contact").click() # знаходить ссилку по тексту, але
+                                                            #  без збереження у зміннy
+
+
+# click_button3 = browser.find_element(By.CSS_SELECTOR, "input[class='btn btn-primary']")
+# click_button3.click()
+
+click_button4 = browser.find_element(By.XPATH, '//input[@class="btn btn-primary"]')
+click_button4.click()
 sleep(3)
+
+
+
+
+
+
+
+
+
+
