@@ -174,15 +174,16 @@
 # print(list_a)
 # print(list_b)
 #
-# # second variant Більш приорітетний і правильний
-# import copy
-# list_c = [23,45,656]
-# list_d = copy.deepcopy(list_c)
-# print(list_c)
-# print(list_d)
-# list_c.append(200)
-# print(list_c)
-# print(list_d)
+# second variant Більш приорітетний і правильний
+import copy
+list_c = [23,45,656]
+list_d = copy.deepcopy(list_c)
+print(list_c)
+print(list_d)
+list_c.append(200)
+print(list_c)
+print(list_d)
+print()
 
 # list_a = [12, 10, 4, 12, 11]
 # print(sum(list_a)/len(list_a))
