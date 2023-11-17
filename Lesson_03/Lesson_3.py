@@ -176,7 +176,8 @@
 #
 # second variant Більш приорітетний і правильний
 import copy
-list_c = [23,45,656]
+
+list_c = [23, 45, 656]
 list_d = copy.deepcopy(list_c)
 print(list_c)
 print(list_d)
