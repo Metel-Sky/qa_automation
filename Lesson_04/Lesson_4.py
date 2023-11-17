@@ -40,6 +40,7 @@
 # print(list_22)
 
 
+
 # # remove видалення елемента по конкретному значеню
 # list_products = [3,"gh",5,"UI", "gh"]
 # print(list_products)
