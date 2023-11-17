@@ -66,10 +66,10 @@
 # print(b)
 
 
-# for in (break, continue), зміна списку на ходу.
-# for i in [1,2,3]:
-#     print(i)
-# print("finish")
+#for in (break, continue), зміна списку на ходу.
+for i in [1,2,3]:
+    print(i)
+print("finish")
 
 # for i in "привіт, як справи?"[::2]:
 
@@ -138,9 +138,9 @@ import time
 
 
 # Ще по формату https://github.com/Pasha-lt/study/blob/main/format_and_join.py
-name = "Сергій"
-mid_name = "Андрійович"
-balance = 15000000
+# name = "Сергій"
+# mid_name = "Андрійович"
+# balance = 15000000
 
 # text = """Шановний {0} {1}, баланс вашого рахунку складає {2} грн.""".format(name, mid_name, balance)
 # print(text)
