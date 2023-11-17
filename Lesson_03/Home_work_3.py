@@ -1,47 +1,30 @@
-print("Для початку Введіть список товарів")
-list_of_goods = [0]
+print("Для початку Введіть список товарів мінімум 5 ")
+list_of_goods = input("Введіть ваші продукти через пробіл: ").split()
 
-goods_1 = input("Введіть назву товару: ")
-list_of_goods.append(goods_1)
 
-goods_2 = input("Введіть назву товару: ")
-list_of_goods.append(goods_2)
+print(f"Товари в списку {list_of_goods}")
+var = int(input("Введіть номер вже купленого товару: "))
+list_of_goods.pop(var -1)
+print(list_of_goods)
 
-goods_3 = input("Введіть назву товару: ")
-list_of_goods.append(goods_3)
+var = int(input("Введіть номер вже купленого товару: "))
+list_of_goods.pop(var -1)
+print(list_of_goods)
 
-goods_4 = input("Введіть назву товару: ")
-list_of_goods.append(goods_4)
+var = int(input("Введіть номер вже купленого товару: "))
+list_of_goods.pop(var -1)
+print(list_of_goods)
 
-goods_5 = input("Введіть назву товару: ")
-list_of_goods.append(goods_5)
-print(f"Товари в списку \n{list_of_goods[1]} \n{list_of_goods[2]}"
-      f"\n{list_of_goods[3]} \n{list_of_goods[4]}\n{list_of_goods[5]}")
 var = int(input("Введіть номер вже купленого товару: "))
 
-list_of_goods.pop(var)
-list_of_goods.pop(0)
+list_of_goods.pop(var -1)
 print(list_of_goods)
-list_of_goods = [0] + list_of_goods
+
 var = int(input("Введіть номер вже купленого товару: "))
-list_of_goods.pop(var)
-list_of_goods.pop(0)
+
+list_of_goods.pop(var -1)
 print(list_of_goods)
-list_of_goods = [0] + list_of_goods
-var = int(input("Введіть номер вже купленого товару: "))
-list_of_goods.pop(var)
-list_of_goods.pop(0)
-print(list_of_goods)
-list_of_goods = [0] + list_of_goods
-var = int(input("Введіть номер вже купленого товару: "))
-list_of_goods.pop(var)
-list_of_goods.pop(0)
-print(list_of_goods)
-list_of_goods = [0] + list_of_goods
-var = int(input("Введіть номер вже купленого товару: "))
-list_of_goods.pop(var)
-list_of_goods.pop(0)
-print(list_of_goods)
+
 
 if not list_of_goods:
     print("Ваш список закупок пустий!!!")
@@ -50,24 +33,7 @@ else:
 
 list_2 = input("Створити новий список? Y\\N ")
 if list_2.upper() == "Y":
-    print("Для початку Введіть список товарів")
-    list_of_goods = [0]
-
-    goods_1 = input("Введіть назву товару: ")
-    list_of_goods.append(goods_1)
-
-    goods_2 = input("Введіть назву товару: ")
-    list_of_goods.append(goods_2)
-
-    goods_3 = input("Введіть назву товару: ")
-    list_of_goods.append(goods_3)
-
-    goods_4 = input("Введіть назву товару: ")
-    list_of_goods.append(goods_4)
-
-    goods_5 = input("Введіть назву товару: ")
-    list_of_goods.append(goods_5)
-    print(f"Товари в списку \n{list_of_goods[1]} \n{list_of_goods[2]}"
-          f"\n{list_of_goods[3]} \n{list_of_goods[4]}\n{list_of_goods[5]}")
+    list_of_goods = input("Введіть ваші продукти через пробіл: ").split()
+    print(list_of_goods)
 else:
     print("Гарного дня!!!")
