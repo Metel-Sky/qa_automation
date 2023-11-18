@@ -35,24 +35,21 @@
 
 # print("Для початку Введіть список товарів мінімум 5 ")
 # list_of_goods = input("Введіть ваші продукти через пробіл: ").split()
-#
 # print(f"Товари в списку {list_of_goods}")
 #
 # while len(list_of_goods) > 0:
-#
 #     if len(list_of_goods) == 0:
 #         break
 #     var = int(input("Введіть номер вже купленого товару: "))
 #     list_of_goods.pop(var - 1)
 #     print(list_of_goods)
 #
-# list_2 = input("Створити новий список? Y\\N ")
-# if list_2.upper() == "Y":
-#     list_of_goods = input("Введіть ваші продукти через пробіл: ").split()
-#     print(list_of_goods)
+# new_list = input("Створити новий список? Y\\N ")
+# if new_list.upper() == "Y":
+#     new_list = input("Введіть ваші продукти через пробіл: ").split()
+#     print(new_list)
 # else:
 #     print("Гарного дня!!!")
-
 
 # =======================================================================================================================
 
@@ -67,7 +64,7 @@
 # n = 0
 # while n < 3:
 #     pin = int(input("Введіть пінкод: "))
-#     if n == 2:
+#     if n == 2 and pin != PIN:
 #         print("Карта заблокована!!!")
 #         break
 #     elif pin != PIN:
@@ -85,9 +82,9 @@
 # name = input("Введіть своє ім'я: ")  # "оЛенА"
 # age = input("Введіть свій вік: ")  # 21
 #
-# f_string = str(f"Я {name}, мені {age} рік ")  # тут ваш код формата ф-стрінг. | повино вийти -> Я Олена, мені 21 рік
+# f_string = str(f"Я {name.title()}, мені {age} рік ")  # тут ваш код формата ф-стрінг. | повино вийти -> Я Олена, мені 21 рік
 #
-# format_string = """Я {name}, мені {age} рік """.format(name=name, age=age)  # тут ваш код формата формат стрінг |
+# format_string = """Я {name}, мені {age} рік """.format(name=name.title(), age=age)  # тут ваш код формата формат стрінг |
 # # повино вийти -> Я Олена, мені 21 рік
 # print()
 # print(f_string)
