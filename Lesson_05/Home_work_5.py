@@ -36,5 +36,5 @@ if operation in dict_1:
     for i in range(2, 10):
         print()
         print(end=" ")
-        for j in range(2,10):
-            print(f"{i} {operation} {j} = {dict_1[operation][i,j]}\n", end=" ")
+        for j in range(2, 10):
+            print(f"{i} {operation} {j} = {dict_1[operation][i, j]}\n", end=" ")
