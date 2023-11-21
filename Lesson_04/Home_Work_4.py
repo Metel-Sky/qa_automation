@@ -67,7 +67,7 @@ PIN = 1515
 n = 0
 while n < 3:
     pin = int(input("Введіть пінкод: "))
-    if n == 2:
+    if n == 2 and pin!=1515:
         print("Карта заблокована!!!")
         break
     elif pin != PIN:
