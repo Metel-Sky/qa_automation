@@ -66,9 +66,16 @@ for i in range(2, 10):
         volume = j - i
         dict_1["-"][(i, j)] = volume
 
-operation = input("Виберіть операцію (+, -, *, /): ")
 
-if operation in dict_1:
-    for i in range(2, 10):
-        for j in range(2, 10):
-            print(f"{i} {operation} {j} = {dict_1[operation][(i, j)]}", end=" ")
+
+def math_table():
+    operation = input("Виберіть операцію (+, -, *, /): ")
+    if operation in dict_1:
+        for i in range(2, 10):
+            print()
+            print(end=" ")
+            for j in range(2, 10):
+                print(f"{i} {operation} {j} = {dict_1[operation][i, j]}\n", end=" ")
+
+
+math_table()
