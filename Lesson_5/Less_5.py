@@ -115,10 +115,12 @@ set_a = {3, 4, 5}
 
 
 # цикл в циклі
-# for i in range(2, 10):
-#     for j in range(2, 10):
-#         print(f"{i}*{j}={i*j}", end=" ")
-#     print()
+
+for i in range(2 , 10):
+    for j in range(2, 10):
+        print(f"{i}*{j}={i*j}", end="  ")
+    print()
+
 
 
 # KISS - keep it simple - пишемо просто, не пишемо зайвого
