@@ -16,6 +16,8 @@ for i in range(2, 10):
         volume = j * i
         dict_1["*"][(i, j)] = volume
 
+
+
 for i in range(2, 10):
     for j in range(2, 10):
         volume = j / i
