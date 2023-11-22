@@ -21,7 +21,6 @@
 
 PIN = 1515
 
-
 def pin_on(pin : int):
     n = 0
     while n < 3:
@@ -36,7 +35,7 @@ def pin_on(pin : int):
             print("Ласкаво просимо до вашого особистого кабінету")
             return
 
-pin_on(int(input("Введіть ПІН: ")))
+pin_on(input("Введіть ПІН: "))
 
 
 
