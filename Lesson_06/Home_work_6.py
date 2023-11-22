@@ -47,15 +47,18 @@
 # (додавання, віднімання, множення, ділення). і виведіть йому цю табличку.
 
 
-dict_1 = {'+': {}, '-': {}, '/': {}, '*': {},}
+dict_1 = {'+': {}, '-': {}, '/': {}, '*': {}, }
 
 oper = input("Виберіть операцію (+, -, *, /): ")
+
+
 def filling_dict(oper):
     for i in range(2, 10):
         for j in range(2, 10):
-            vol = eval(f"{j}{oper}{i}")
-            dict_1[oper][i, j] = vol
+            vol = eval(f"{i}{oper}{j}")
+            dict_1[oper][i, j] = round(vol, 2)
     return dict_1
+
 
 def table(dict_1):
     if oper in dict_1:
@@ -65,12 +68,6 @@ def table(dict_1):
             for j in range(2, 10):
                 print(f"{i} {oper} {j} = {dict_1[oper][i, j]}\n", end=" ")
 
+
 filling_dict(oper)
 table(dict_1)
-
-
-
-
-
-
-
