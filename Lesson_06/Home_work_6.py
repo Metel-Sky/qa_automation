@@ -17,22 +17,33 @@
 # то напишіть що карта заблокована.
 # Використовуйте цикл while.
 
-# def pin_on(pin):
-#     PIN = 1515
-#     n = 0
-#     while n < 3:
-#         if n == 2 and pin != 1515:
-#             print("Карта заблокована!!!")
-#             return
-#         elif pin != PIN:
-#             n += 1
-#             print(f"Не правильний пін спробуйте ще, у вас залишилось {3 - n} спроб.")
-#             continue
-#         else:
-#             print("Ласкаво просимо до вашого особистого кабінету")
-#             return
-#
-# pin_on(input())
+# !========= не працюе ======================
+
+PIN = 1515
+
+
+def pin_on(pin : int):
+    n = 0
+    while n < 3:
+        if n == 2 and pin != 1515:
+            print("Карта заблокована!!!")
+            return
+        elif pin != PIN:
+            n += 1
+            print(f"Не правильний пін спробуйте ще, у вас залишилось {3 - n} спроб.")
+            pin = int(input("Введіть ПІН: "))
+        else:
+            print("Ласкаво просимо до вашого особистого кабінету")
+            return
+
+pin_on(int(input("Введіть ПІН: ")))
+
+
+
+
+
+
+
 
 
 # ============================================================================================
@@ -47,27 +58,27 @@
 # (додавання, віднімання, множення, ділення). і виведіть йому цю табличку.
 
 
-dict_1 = {'+': {}, '-': {}, '/': {}, '*': {}, }
-
-oper = input("Виберіть операцію (+, -, *, /): ")
-
-
-def filling_dict(oper):
-    for i in range(2, 10):
-        for j in range(2, 10):
-            vol = eval(f"{i}{oper}{j}")
-            dict_1[oper][i, j] = round(vol, 2)
-    return dict_1
-
-
-def table(dict_1):
-    if oper in dict_1:
-        for i in range(2, 10):
-            print()
-            print(end=" ")
-            for j in range(2, 10):
-                print(f"{i} {oper} {j} = {dict_1[oper][i, j]}\n", end=" ")
-
-
-filling_dict(oper)
-table(dict_1)
+# dict_1 = {'+': {}, '-': {}, '/': {}, '*': {}, }
+#
+# oper = input("Виберіть операцію (+, -, *, /): ")
+#
+#
+# def filling_dict(oper):
+#     for i in range(2, 10):
+#         for j in range(2, 10):
+#             vol = eval(f"{i}{oper}{j}")
+#             dict_1[oper][i, j] = round(vol, 2)
+#     return dict_1
+#
+#
+# def table(dict_1):
+#     if oper in dict_1:
+#         for i in range(2, 10):
+#             print()
+#             print(end=" ")
+#             for j in range(2, 10):
+#                 print(f"{i} {oper} {j} = {dict_1[oper][i, j]}\n", end=" ")
+#
+#
+# filling_dict(oper)
+# table(dict_1)
