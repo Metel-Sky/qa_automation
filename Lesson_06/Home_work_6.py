@@ -17,22 +17,22 @@
 # то напишіть що карта заблокована.
 # Використовуйте цикл while.
 
-# def pin_on():
+# def pin_on(pin):
 #     PIN = 1515
 #     n = 0
 #     while n < 3:
-#         pin = int(input("Введіть пінкод: "))
 #         if n == 2 and pin != 1515:
 #             print("Карта заблокована!!!")
-#             break
+#             return
 #         elif pin != PIN:
 #             n += 1
 #             print(f"Не правильний пін спробуйте ще, у вас залишилось {3 - n} спроб.")
+#             continue
 #         else:
 #             print("Ласкаво просимо до вашого особистого кабінету")
-#             break
-
-# pin_on()
+#             return
+#
+# pin_on(input())
 
 
 # ============================================================================================
@@ -47,31 +47,15 @@
 # (додавання, віднімання, множення, ділення). і виведіть йому цю табличку.
 
 
-dict_1 = {
-    '+': {}, '-': {}, '/': {}, '*': {},
-}
+dict_1 = {'+': {}, '-': {}, '/': {}, '*': {},}
 
 oper = input("Виберіть операцію (+, -, *, /): ")
 def filling_dict(oper):
     for i in range(2, 10):
         for j in range(2, 10):
-
-            if oper =="*":
-                volume = j * i
-                dict_1[oper][i, j] = volume
-
-            elif oper =="/":
-                volume = j / i
-                dict_1[oper][i, j] = volume
-
-            elif oper =="-":
-                volume = j - i
-                dict_1[oper][i, j] = volume
-            else:
-                volume = j + i
-                dict_1[oper][i, j] = volume
+            vol = eval(f"{j}{oper}{i}")
+            dict_1[oper][i, j] = vol
     return dict_1
-
 
 def table(dict_1):
     if oper in dict_1:
