@@ -48,31 +48,33 @@
 # print(foo(13))
 # print(foo(15))
 # print(foo(34))
-
+#==========================================================================================
 # Lambda, анонімно функція
 
-calc_dict = {
-    "+": lambda a, b: a + b,
-    "*": lambda a, b: a * b,
-    "/": lambda a, b: a / b,
-    "-": lambda a, b: a - b
-}
-#
-# print(calc_dict["+"](199, 1))
-# print(calc_dict["*"](4, 3))
-def concatenate(string_a : str, string_b : str) -> str:
-    result = string_a + string_b
-    return result
+# calc_dict = {
+#     "+": lambda a, b: a + b,
+#     "*": lambda a, b: a * b,
+#     "/": lambda a, b: a / b,
+#     "-": lambda a, b: a - b
+# }
+# #
+# # print(calc_dict["+"](199, 1))
+# # print(calc_dict["*"](4, 3))
+# def concatenate(string_a : str, string_b : str) -> str:
+#     result = string_a + string_b
+#     return result
+#==========================================================================================
 
 
-
-# sorted
-# list_1 = [34, 456, 11, 12, -100, 77, 100, 35, 100.0, 100]
-# list_2 = ['груша', 'грушаa', 'банан',  'яблуко', 'диня', "слива", "апельсин"]
-# print(sorted(list_1, reverse=True))
-# print(sorted(list_1, key=lambda x: x%2))
-# print(sorted(list_2, key=len))
-# print(sorted(list_2, key=lambda a: a[-1]))
+sorted
+list_1 = [34, 456, 11, 12, -100, 77, 100, 35, 100.0, 100]
+list_2 = ['груша', 'грушаa', 'бананб',  'яблуков', 'диня', "слива", "апельсин"]
+list_3 = ['123','1','1234','12']
+list_4 = [2,1,6,3,4,]
+print(sorted(list_1, reverse=True))
+print(sorted(list_1, key=lambda x: x%2))# сортує по тим шо діляться на 2 (ті що не діляться виводить в кінці
+print(sorted(list_3, key=len))# сортує по довжині слова
+print(sorted(list_2, key=lambda a: a[-1]))# сортує по останній букві
 #
 
 
@@ -126,15 +128,15 @@ def concatenate(string_a : str, string_b : str) -> str:
 
 
 
-# ascii (укрстрінг), ord VS chr
-print(ascii("c"))  # eng c
-print(ascii("с"))  # укр c
-
-print(ord("F"))  # 70
-print(ord("f"))  # 102
-
-print(chr(102))  # f
-print(chr(72))  # H
+# # ascii (укрстрінг), ord VS chr
+# print(ascii("c"))  # eng c
+# print(ascii("с"))  # укр c
+#
+# print(ord("F"))  # 70
+# print(ord("f"))  # 102
+#
+# print(chr(102))  # f
+# print(chr(72))  # H
 
 
 
