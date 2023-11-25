@@ -11,3 +11,4 @@ def test_calc_subs():
 
 def test_concatenate():
     assert concatenate("a", "b") == "ab"
+
