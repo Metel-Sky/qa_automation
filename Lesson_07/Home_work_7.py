@@ -30,10 +30,7 @@ def sortLENG (*args):
     catalog = list(args)
     return sorted(catalog, key=len)
 
-sortUP(1,5,3,4,2)
 
-
-sortLENG('abcffff','ddff','ddd','77ddd')
 
 
 
