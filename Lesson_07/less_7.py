@@ -49,24 +49,24 @@
 # print(foo(15))
 # print(foo(34))
 #==========================================================================================
-# Lambda, анонімно функція
+#Lambda, анонімно функція
 
-# calc_dict = {
-#     "+": lambda a, b: a + b,
-#     "*": lambda a, b: a * b,
-#     "/": lambda a, b: a / b,
-#     "-": lambda a, b: a - b
-# }
-# #
-# # print(calc_dict["+"](199, 1))
-# # print(calc_dict["*"](4, 3))
-# def concatenate(string_a : str, string_b : str) -> str:
-#     result = string_a + string_b
-#     return result
+calc_dict = {
+    "+": lambda a, b: a + b,
+    "*": lambda a, b: a * b,
+    "/": lambda a, b: a / b,
+    "-": lambda a, b: a - b
+}
+#
+# print(calc_dict["+"](199, 1))
+# print(calc_dict["*"](4, 3))
+def concatenate(string_a : str, string_b : str) -> str:
+    result = string_a + string_b
+    return result
 #==========================================================================================
 
 
-sorted
+#sorted
 list_1 = [34, 456, 11, 12, -100, 77, 100, 35, 100.0, 100]
 list_2 = ['груша', 'грушаa', 'бананб',  'яблуков', 'диня', "слива", "апельсин"]
 list_3 = ['123','1','1234','12']
