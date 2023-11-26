@@ -18,16 +18,16 @@
 
 
 
-def sortUp (*args : tuple):
+def sortUp (*args : int | str):
     catalog= list(args)
     return sorted(catalog)
 
 
-def sortDown (*args : tuple):
+def sortDown (*args : int | str):
     catalog = list(args)
     return sorted(catalog, reverse=True)
 
-def sortLen (*args : tuple):
+def sortLen (*args : int | str):
     catalog = list(args)
     return sorted(catalog, key=len)
 
