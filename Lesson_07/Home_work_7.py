@@ -17,16 +17,16 @@
 
 
 
-def sortUP (*args):
+def sortUp (*args):
     catalog= list(args)
     return sorted(catalog)
 
 
-def sortDOWN (*args):
+def sortDown (*args):
     catalog = list(args)
     return sorted(catalog, reverse=True)
 
-def sortLENG (*args):
+def sortLen (*args):
     catalog = list(args)
     return sorted(catalog, key=len)
 
