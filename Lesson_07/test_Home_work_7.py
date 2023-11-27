@@ -13,3 +13,4 @@ def test_sortDown():
 
 def test_sortLen():
     assert sortLen('abcffff', 'ddff', 'ddd', '77ddd') == ['ddd', 'ddff', '77ddd', 'abcffff']
+
