@@ -1,15 +1,16 @@
 # docstring
-def foo(number_2:int, number_1: int) -> int:
-    """
-    add two numbers
-    :param number_1 int: first number
-    :param number_2 int: second number
-    :return int: result add two number
-    """
-    result = number_1 + number_2
-    return result
+# def foo(number_2:int, number_1: int) -> int:
+#     """
+#     add two numbers
+#     :param number_1 int: first number
+#     :param number_2 int: second number
+#     :return int: result add two number
+#     """
+#     result = number_1 + number_2
+#     return result
 
-# use default only when your func need it. Не ставимо дефолт і не використовуємно інпут в оголошені функції.
+# use default only when your func need it.
+# Не ставимо дефолт і не використовуємно інпут в оголошені функції.
 # ENV and requirements.txt коли беремо новий проект дивимось його релізи на pypi.org
 # Exceptions
 
