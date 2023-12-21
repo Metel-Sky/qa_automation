@@ -28,7 +28,7 @@ def func_wrapper_time(func):
         start = datetime.now()
         result = func(*arg, **kwarg)
         delta_time = datetime.now() - start
-        print("Час виконання функції ось такий: ", delta_time)
+        print("Час виконання функції : ", delta_time)
         return result
     return wrapper
 
