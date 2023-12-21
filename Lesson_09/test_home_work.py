@@ -5,10 +5,8 @@ from Home_work_9 import add_thre_numbers
 def test_first():
     assert add_thre_numbers(5, 3, 3) == 11
 
-
 def test_second():
     assert add_thre_numbers(3, 3, 3) == 9
-
 
 def test_end():
     assert add_thre_numbers(3, 4, 3) == 10
