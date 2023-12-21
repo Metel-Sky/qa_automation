@@ -118,8 +118,8 @@ def foo_2(*arg, **kwarg):
     print("foo_2")
     time.sleep(2)
 
-# foo_1()
-# foo_2()
+foo_1()
+foo_2()
 
 
 
