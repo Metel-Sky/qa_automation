@@ -17,7 +17,7 @@ def add_thre_numbers(number_1: int | float, number_2: int | float, number_3: int
     result = number_1 + number_2 + number_3
     return result
 
-# 4) перепишіть декоратор який заміряє час з уроку в домашку,
+# 4) перепишіть декоратор який заміряє час з уроку в домашку,  ^-^
 # можете його поклацати, як він працює
 
 
