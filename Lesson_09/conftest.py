@@ -14,5 +14,5 @@ def postman_request():
     yield response
     # func end -------------
     # teardown start ------
-    print("Teardown")
+    print("\nTeardown")
     # teardown end ------
