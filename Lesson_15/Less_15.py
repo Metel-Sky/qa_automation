@@ -79,7 +79,7 @@ class Bank:
 # print(list_c)
 
 # dict
-dict_a = {}
+# dict_a = {}
 # for i in range(9):
 #     dict_a[i] = i ** 2
 #
