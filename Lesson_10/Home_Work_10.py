@@ -1,12 +1,13 @@
 import pytest
+
+
+
+
+
 def add_thre_numbers(number_1: int | float, number_2: int | float, number_3: int | float) -> int | float:
     result = number_1 + number_2 + number_3
+
     return result
-
-
-
-
-
 
 
 @pytest.mark.parametrize("number_1, number_2, number_3, result", [
@@ -16,3 +17,4 @@ def add_thre_numbers(number_1: int | float, number_2: int | float, number_3: int
 ])
 def test_set(number_1, number_2, number_3, result):
     assert add_thre_numbers(number_1, number_2, number_3) == result
+
