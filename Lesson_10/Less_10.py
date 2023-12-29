@@ -80,22 +80,22 @@ from random import randint as rrandint
 from random import *  # імпортує всі функції == так не робіть
 
 # ВЗАЄМОДІЯ З ФАЙЛАМИ
-file = open("text.txt", "r")  # читання файла
-for i in file:
-    print(i)
-    print("---")
-file.close()
+# file = open("text.txt", "r")  # читання файла
+# for i in file:
+#     print(i)
+#     print("---")
+# file.close()
 
-# with open("text.txt", "r") as file:  # контекстний менеджер сам закриває. Краще використовувати його.
-#     for i in file:
-#         print(i)
+with open("text.txt", "r") as file:  # контекстний менеджер сам закриває. Краще використовувати його.
+    for i in file:
+        print(i)
 
 
 # with open("text.txt", "w") as file:  # w - write затирає старий файл.
 #     file.write("Hello")
 
 
-# with open("tex2t.txt", "a") as file:  # a - дозапис файлу.
+# with open("log.txt", "a") as file:  # a - дозапис файлу.
 #     file.write("\n")
 #     file.write("++-=-=-=-=-")
 
