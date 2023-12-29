@@ -1,7 +1,6 @@
 import pytest
 
 
-
 @pytest.mark.new
 def test_1():
     assert True
