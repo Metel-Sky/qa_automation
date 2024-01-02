@@ -1,5 +1,5 @@
 import pytest
-from Home_Work_10 import add_three_numbers
+from Lesson_10.Home_Work.Home_Work_10 import add_three_numbers
 
 
 @pytest.mark.parametrize("number_1, number_2, number_3, expected_result", [

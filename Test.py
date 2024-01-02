@@ -91,10 +91,44 @@
 #     time.sleep(10)
 
 
-import time
-import ctypes
+# import time
+# import ctypes
 
 
-while True:
-    ctypes.windll.user32.MessageBoxW(0, "Нагадування", "Пройшло 10 секунд", 0x40)
-    time.sleep(10)
+# while True:
+#     ctypes.windll.user32.MessageBoxW(0, "Нагадування", "Пройшло 10 секунд", 0x40)
+#     time.sleep(10)
+
+
+
+
+
+
+
+
+
+
+
+class Student:
+    def __init__(self, name, grades):
+        self.name = name
+        self.grades = grades
+
+    def greet(self):
+        print(f"Привіт, я студент {self.name}!")
+
+    def display_grades(self):
+        print(f"Оцінки студента {self.name}: {self.grades}")
+
+
+# Створення двох екземплярів класу Student
+student1 = Student(name="Олександр", grades=[90, 85, 92, 78])
+student2 = Student(name="Іван", grades=[88, 94, 89, 76])
+
+# Вивід привітань та оцінок для кожного студента
+student1.greet()
+student1.display_grades()
+
+student2.greet()
+student2.display_grades()
+
