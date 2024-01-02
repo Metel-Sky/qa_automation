@@ -1,14 +1,14 @@
 # Дзен пайтон кому цікаво подивіться
 # Простота та очевидність
-# коли треба присвоювати дефотні дані в функції
-# def foo(element, list_a, flag=False):
-#     list_a.append(element)
-#     if flag:
-#         list_a = sorted(list_a)
-#     return list_a
-#
-#
-# print(foo(34, [4444,143,47], True))
+# коли треба присвоювати дефолтні дані в функції
+
+def foo(element, list_a, flag=False):
+    list_a.append(element)
+    if flag:
+        list_a = sorted(list_a)
+    return list_a
+
+print(foo(34, [4444,143,47], True))
 
 
 
@@ -35,14 +35,18 @@
 #
 #     def say_goodbay(self):
 #         print(f"гарного дня {self.age_name}")
-#
-#
+
+
+
+
 # obj_1 = NameClass()
 # print(obj_1.name)
 # obj_1.say_hello()
 # obj_1.say_goodbay()
 # print("->", obj_1.age_name)
-#
+
+
+
 # obj_2 = NameClass()
 # obj_2.name = "Pavlo"
 # print(obj_2.name)
