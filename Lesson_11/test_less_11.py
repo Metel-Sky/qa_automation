@@ -40,10 +40,13 @@ def test_close_value_2():
 #  pytest -k "wait" lesson_11/test_less_11.py  ранимо по ключовому слову
 # pytest -s lesson_11/test_less_11.py режим з прінтами
 
-# pytest lesson_11/test_less_11.py -v -n=auto запуск в кілька потоків з прорахуванням кількості потоків.
+# pytest lesson_11/test_less_11.py -v -n=auto запуск в кілька потоків
+# з прорахуванням кількості потоків.
+
 # pytest lesson_11/test_less_11.py -v -n=4   конкретна кількість потоків.
-# python3 -m pytest lesson_11/test_less_11.py -n=4 - Ще один варіант запису який більш універсальний,
-# використовуйте коли попередній не працює.
+
+# python3 -m pytest lesson_11/test_less_11.py -n=4 - Ще один варіант запису
+# який більш універсальний, використовуйте коли попередній не працює.
 
 # pytest -k "wait" lesson_11/test_less_11.py -v -n=3  - обьєднання
 
