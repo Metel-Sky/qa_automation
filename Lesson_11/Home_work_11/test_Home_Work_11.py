@@ -15,31 +15,32 @@ import pytest
 @pytest.mark.sleep
 def test_sleep_1():
     time.sleep(2)
-    print("yes 1")
+
+    assert True
 
 
 @pytest.mark.sleep
 def test_sleep_2():
-    print("yes 2")
     time.sleep(2)
+    assert True
 
 
 @pytest.mark.sleep
 def test_sleep_3():
-    print("yes 3")
     time.sleep(2)
+    assert True
 
 
 @pytest.mark.sleep
 def test_sleep_4():
-    print("yes 4")
     time.sleep(2)
+    assert True
 
 
 @pytest.mark.unique
 def test_sleep_unique():
-    print("yes 5")
     time.sleep(2)
+    assert True
 
 # pytest -m "sleep or unique" -v
 
