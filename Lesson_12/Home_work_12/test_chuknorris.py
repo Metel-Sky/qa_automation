@@ -7,7 +7,7 @@ class TestRandom:
         assert int(self.response.json()["created_at"][:4]) > 1995, "all our jokes were created until 1990"
 
     def test_status_code(self):
-        assert self.response.status_code ==200 #Перевірка статус коду в evaluate
+        assert self.status_code ==200 #Перевірка статус коду в evaluate
 
 
 # todo evaluate
