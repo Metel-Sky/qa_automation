@@ -1,14 +1,13 @@
 import pytest
-import requests
 
 
+@pytest.mark.usefixtures("fixture_random")
+class TestRandom:
+    def test_chuk_year(self):
+        assert int(self.response.json()["created_at"][:4]) > 1995, "all our jokes were created until 1990"
 
-
-def test_chuk_year(fixture_random):
-    assert int(fixture_random.json()["created_at"][:4]) > 1995, "all our jokes were created until 1990"
-
-def test_status_code(fixture_random):
-    assert fixture_random.status_code ==200 #Перевірка статус коду в evaluate
+    def test_status_code(self):
+        assert self.response.status_code ==200 #Перевірка статус коду в evaluate
 
 
 # todo evaluate
