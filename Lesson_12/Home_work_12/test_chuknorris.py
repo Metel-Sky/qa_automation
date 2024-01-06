@@ -10,6 +10,35 @@ class TestRandom:
         assert self.status_code ==200 #Перевірка статус коду в evaluate
 
 
+def test_category():
+    pass
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # todo evaluate
 #   assert response.status_code ==200 Перевірка статус коду в evaluate
 #   assert int(response.json()["created_at"][:4]) > 1995, "all our jokes were created until 1990"
