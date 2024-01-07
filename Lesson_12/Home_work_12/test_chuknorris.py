@@ -61,4 +61,4 @@ def test_category():
 #   assert int(response.json()["created_at"][:4]) > 1995, "all our jokes were created until 1990"
 #   response.json()   інформація в форматі json
 #   response.json()["created_at"] == дата створення
-#
+#======================================================
