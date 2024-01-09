@@ -1,5 +1,4 @@
 from Lesson_18.TextBoxPage import TextBoxPage
-
 import time
 
 
