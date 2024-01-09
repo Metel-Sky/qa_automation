@@ -1,8 +1,10 @@
-import pytest
 from selenium import webdriver
+import pytest
 
 @pytest.fixture
 def chrome():
-    driver = webdriver.Chrome(executable_path="Users\Vinch\Desktop\QA_automation\Lesson_18\chromedriver.exe")
+    chrome_options = webdriver.ChromeOptions()
+    chrome_options.add_argument("executable_path=Users/Vinch/Desktop/QA_automation/Lesson_18/chromedriver.exe")
+    driver = webdriver.Chrome(options=chrome_options)
     yield driver
     driver.quit()
