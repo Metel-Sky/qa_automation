@@ -1,7 +1,6 @@
 from Lesson_18.TextBoxPage import TextBoxPage
 
 
-
 class TestTextBox:
 
     def test_username_fill_and_check(self, chrome):
@@ -13,7 +12,6 @@ class TestTextBox:
         name_field = page.get_result_fullname()
         assert name_field.replace("Name:", "") == "Pavlo"
 
-
     def test_email_fill_and_check(self, chrome):
         page = TextBoxPage(chrome)
         page.open()
@@ -22,7 +20,6 @@ class TestTextBox:
         page.click_submit()
         email_field = page.get_result_email()
         assert email_field.replace("Email:", "") == "djkif1212@gmail.com"
-
 
     def test_curr_addr_fill_and_check(self, chrome):
         page = TextBoxPage(chrome)
