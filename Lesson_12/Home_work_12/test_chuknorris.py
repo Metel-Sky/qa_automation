@@ -63,60 +63,61 @@ class ChuckNorrisJokeSearch:
         return response.status_code, response.json()
 
 
-def test_search_jokes_status_code(joke_search):
-    status_code, _ = joke_search.search_jokes_by_keyword('python')
-    assert status_code == 200
+    def test_search_jokes_status_code(joke_search):
+        status_code, _ = joke_search.search_jokes_by_keyword('python')
+        assert status_code == 200
 
 
-def test_search_jokes_count(joke_search):
-    _, data = joke_search.search_jokes_by_keyword('testing')
-    assert 'total' in data
-    assert data['total'] >= 0
+
+    def test_search_jokes_count(joke_search):
+        _, data = joke_search.search_jokes_by_keyword('testing')
+        assert 'total' in data
+        assert data['total'] >= 0
 
 
-def test_search_jokes_content(joke_search):
-    _, data = joke_search.search_jokes_by_keyword('Chuck')
-    assert 'result' in data
-    assert isinstance(data['result'], list)
-    assert len(data['result']) > 0
-    assert 'value' in data['result'][0]
+    def test_search_jokes_content(joke_search):
+        _, data = joke_search.search_jokes_by_keyword('Chuck')
+        assert 'result' in data
+        assert isinstance(data['result'], list)
+        assert len(data['result']) > 0
+        assert 'value' in data['result'][0]
 
 
-def test_search_jokes_invalid_keyword(joke_search):
-    status_code, data = joke_search.search_jokes_by_keyword('invalid_keyword')
-    assert status_code == 200
-    assert 'total' in data
-    assert data['total'] == 0
+    def test_search_jokes_invalid_keyword(joke_search):
+        status_code, data = joke_search.search_jokes_by_keyword('invalid_keyword')
+        assert status_code == 200
+        assert 'total' in data
+        assert data['total'] == 0
 
 
-def test_search_jokes_special_characters(joke_search):
-    status_code, data = joke_search.search_jokes_by_keyword('$%^&*')
-    assert status_code == 200
-    assert 'total' in data
-    assert data['total'] == 0
+    def test_search_jokes_special_characters(joke_search):
+        status_code, data = joke_search.search_jokes_by_keyword('$%^&*')
+        assert status_code == 200
+        assert 'total' in data
+        assert data['total'] == 0
 
 
-def test_category():
-    URL = "https://api.chucknorris.io/jokes/categories"
-    response = requests.request(method="GET", url=URL)
-    print(response.json())
+    def test_category(self):
+        URL = "https://api.chucknorris.io/jokes/categories"
+        response = requests.request(method="GET", url=URL)
+        print(response.json())
 
 
-def test_categories():
-    URL = "https://api.chucknorris.io/jokes/random?category=career"
-    response = requests.request(method="GET", url=URL)
-    print(response.text)
-    print()
-    print(response.json()["id"])
-    print()
-    assert len(response.json()["id"]) > 10
+    def test_categories(self):
+        URL = "https://api.chucknorris.io/jokes/random?category=career"
+        response = requests.request(method="GET", url=URL)
+        print(response.text)
+        print()
+        print(response.json()["id"])
+        print()
+        assert len(response.json()["id"]) > 10
 
 
-@pytest.mark.parametrize("category",
-                         requests.request(method="GET", url="https://api.chucknorris.io/jokes/categories").json())
-def test_categories(category):
-    URL = f"https://api.chucknorris.io/jokes/random?category={category}"
-    response = requests.request(method="GET", url=URL)
-    assert len(response.json()["id"]) > 10
+    @pytest.mark.parametrize("category",
+                             requests.request(method="GET", url="https://api.chucknorris.io/jokes/categories").json())
+    def test_categories(category):
+        URL = f"https://api.chucknorris.io/jokes/random?category={category}"
+        response = requests.request(method="GET", url=URL)
+        assert len(response.json()["id"]) > 10
 
 # ======================================================
