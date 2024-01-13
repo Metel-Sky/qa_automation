@@ -1,7 +1,6 @@
 from selenium.webdriver.remote.webelement import WebElement
-
-from Hillel_october_23.lesson_19.DynamicPropertiesPage import PageDynamicProperties
-from Hillel_october_23.lesson_19.ElementsPage import ElementsPage
+from Lesson_19.DynamicPropertiesPage import PageDynamicProperties
+from Lesson_19.ElementsPage import ElementsPage
 
 class TestElementsPage:
     def test_page(self, chrome):
@@ -18,6 +17,7 @@ class TestElementsPage:
         page.open()
         button: WebElement = page.disable_enable_button()
         button.click()
+
 
     def test_is_button_shown(self, chrome):
         page = PageDynamicProperties(chrome).open()  # короткий запис

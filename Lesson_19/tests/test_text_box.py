@@ -1,6 +1,6 @@
 import pytest
 
-from Hillel_october_23.lesson_19.TextBoxPage import TextBoxPage
+from Lesson_19.TextBoxPage import TextBoxPage
 
 class TestTextBox:
 
@@ -36,4 +36,3 @@ class TestTextBox:
     # def test_perm_addr_fill_and_check(self, chrome):
     #     # todo HW
     #     pass
-
