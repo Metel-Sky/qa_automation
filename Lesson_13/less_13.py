@@ -1,48 +1,50 @@
 # # Наслідування
 #
-class User:
-    name = "Taras"
-    _phone = "0931234567"  # protected
-
-    def say_hello(self):
-        return f"імя {self.name} телефон - {self._phone}"
-
-    def get_contact(self):
-        return self.contact
-
-
-class Developer(User):
-    program_language = "HTML"
-    english_level = "C1"
-
-    def say_hello(self):
-        return f"імя {self.name} телефон - {self._phone} Я багато заробляю"
-
-
-class Admin(User):
-    program_language = "Bash"
-
-class ThirdClass(Admin, Developer):  # від першого наслідника візьмуться основні речі.
-    pass
-
-
-
-user_1 = User()
-user_2 = Developer()
-
-print(user_1.name)
-print(user_2.name)
-print(user_1.say_hello())
-print(user_2.say_hello())
-
-user_3 = ThirdClass()
-print(user_3.name)
-print(user_3.program_language)
+# class User:
+#     name = "Taras"
+#     _phone = "0931234567"  # protected
+#
+#     def say_hello(self):
+#         return f"імя {self.name} телефон - {self._phone}"
+#
+#     def get_contact(self):
+#         return self.contact
+#
+#
+# class Developer(User):
+#     program_language = "HTML"
+#     english_level = "C1"
+#
+#     def say_hello(self):
+#         return f"імя {self.name} телефон - {self._phone} Я багато заробляю"
+#
+#
+# class Admin(User):
+#     program_language = "Bash"
+#
+# class ThirdClass(Admin, Developer):  # від першого наслідника візьмуться основні речі.
+#     pass
+#
+#
+#
+# user_1 = User()
+# user_2 = Developer()
+#
+# print(user_1.name)
+# print(user_2.name)
+# print(user_1.say_hello())
+# print(user_2.say_hello())
+#
+# user_3 = ThirdClass()
+# print(user_3.name)
+# print(user_3.program_language)
 
 # ПЕРЕЗАВАНТАЖЕННЯ МЕТОДІВ, тобто перезапис
 
-# class User2:
-#     # todo init - це не конструктор класу. в конструктор класу входить ще __prepare__, __new__, __init__
+#  class User2:
+#    # todo init - це не конструктор класу.
+#    # todo в конструктор класу входить ще __prepare__, __new__, __init__
+#
 #     def __init__(self, name, age):
 #         self.name = self.fix_name(name)
 #         self.age = age
