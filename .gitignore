@@ -160,5 +160,7 @@ cython_debug/
 .idea/
 
 
+chromedriver
+*.exe
 lesson_7/chromedriver
 .DS_Store
