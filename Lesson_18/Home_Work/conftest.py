@@ -8,3 +8,4 @@ def chrome():
     driver = webdriver.Chrome(options=chrome_options)
     yield driver
     driver.quit()
+#
