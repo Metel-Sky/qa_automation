@@ -14,3 +14,5 @@ class ElementsPage:
     def get_elements_page_categories(self):
         categories = [cat.text for cat in self.driver.find_elements(*self.element_categories)]
         return categories
+
+

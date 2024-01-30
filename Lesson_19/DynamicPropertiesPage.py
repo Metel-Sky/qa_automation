@@ -21,26 +21,3 @@ class PageDynamicProperties:
     def button_disable_enable(self) -> WebElement:
         button = self.driver.find_element(*self.disable_enable_button)
         return button
-
-
-
-
-
-# class PageDynamicProperties:
-#     def __init__(self, driver: WebDriver): # основні функції классу
-#         self.driver = driver
-#         self.url = "https://demoqa.com/dynamic-properties"
-#         self.invisible_visible_button = "visibleAfter"
-#         self.disable_enable_button = (By.ID, "enableAfter")
-#
-#     def open(self):# відкриває сторінку
-#         self.driver.get(self.url)
-#         return self
-#
-#     def button_invisible_visible(self):
-#         button = self.driver.find_element(By.ID,self.invisible_visible_button)
-#         return button
-#
-#     def button_disable_enable(self) -> WebElement:
-#         button = self.driver.find_element(*self.disable_enable_button)
-#         return button
