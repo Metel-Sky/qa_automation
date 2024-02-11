@@ -1,6 +1,6 @@
 import pytest
 
-from Hillel_october_23.lesson_20.TextBoxPage import TextBoxPage
+from Lesson_20.TextBoxPage import TextBoxPage
 
 class TestTextBox:
 
@@ -22,18 +22,3 @@ class TestTextBox:
         page.click_submit()
         class_of_field = page.get_email_field_element().get_attribute("class")
         assert "error" in class_of_field
-
-
-
-    # def test_email_fill_and_check(self, chrome):
-    #     #todo HW
-    #     pass
-    #
-    # def test_curr_addr_fill_and_check(self, chrome):
-    #     # todo HW
-    #     pass
-    #
-    # def test_perm_addr_fill_and_check(self, chrome):
-    #     # todo HW
-    #     pass
-

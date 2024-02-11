@@ -4,7 +4,7 @@ import pytest
 @pytest.fixture
 def chrome():
     chrome_options = webdriver.ChromeOptions()
-    chrome_options.add_argument("executable_path=/home/vinch/Стільниця/Hilel/Lesson_18/Home_Work/chromedriver")
+    chrome_options.add_argument("executable_path=/home/vinch/Стільниця/Hilel/Lesson_18/Home_Work_22/chromedriver")
     driver = webdriver.Chrome(options=chrome_options)
     yield driver
     driver.quit()
