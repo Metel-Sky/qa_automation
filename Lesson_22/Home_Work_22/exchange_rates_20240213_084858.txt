@@ -1,0 +1,245 @@
+[2024-02-13 08:48:58]
+
+cc: AUD
+txt: Австралійський долар
+rate: 24.7322
+
+cc: CAD
+txt: Канадський долар
+rate: 28.1424
+
+cc: CNY
+txt: Юань Женьміньбі
+rate: 5.2679
+
+cc: CZK
+txt: Чеська крона
+rate: 1.6174
+
+cc: DKK
+txt: Данська крона
+rate: 5.4744
+
+cc: HKD
+txt: Гонконгівський долар
+rate: 4.846
+
+cc: HUF
+txt: Форинт
+rate: 0.105311
+
+cc: INR
+txt: Індійська рупія
+rate: 0.45654
+
+cc: IDR
+txt: Рупія
+rate: 0.0024298
+
+cc: ILS
+txt: Новий ізраїльський шекель
+rate: 10.3074
+
+cc: JPY
+txt: Єна
+rate: 0.25438
+
+cc: KZT
+txt: Теньге
+rate: 0.084544
+
+cc: KRW
+txt: Вона
+rate: 0.02846
+
+cc: MXN
+txt: Мексиканське песо
+rate: 2.2219
+
+cc: MDL
+txt: Молдовський лей
+rate: 2.1283
+
+cc: NZD
+txt: Новозеландський долар
+rate: 23.2373
+
+cc: NOK
+txt: Норвезька крона
+rate: 3.6051
+
+cc: RUB
+txt: Російський рубль
+rate: 0.41589
+
+cc: SGD
+txt: Сінгапурський долар
+rate: 28.1811
+
+cc: ZAR
+txt: Ренд
+rate: 1.9942
+
+cc: SEK
+txt: Шведська крона
+rate: 3.634
+
+cc: CHF
+txt: Швейцарський франк
+rate: 43.2864
+
+cc: EGP
+txt: Єгипетський фунт
+rate: 1.2265
+
+cc: GBP
+txt: Фунт стерлінгів
+rate: 47.8047
+
+cc: USD
+txt: Долар США
+rate: 37.8951
+
+cc: BYN
+txt: Білоруський рубль
+rate: 13.774
+
+cc: AZN
+txt: Азербайджанський манат
+rate: 22.3044
+
+cc: RON
+txt: Румунський лей
+rate: 8.2045
+
+cc: TRY
+txt: Турецька ліра
+rate: 1.2342
+
+cc: XDR
+txt: СПЗ (спеціальні права запозичення)
+rate: 50.2413
+
+cc: BGN
+txt: Болгарський лев
+rate: 20.8662
+
+cc: EUR
+txt: Євро
+rate: 40.8092
+
+cc: PLN
+txt: Злотий
+rate: 9.4424
+
+cc: DZD
+txt: Алжирський динар
+rate: 0.2791
+
+cc: BDT
+txt: Така
+rate: 0.34148
+
+cc: AMD
+txt: Вірменський драм
+rate: 0.093046
+
+cc: DOP
+txt: Домініканське песо
+rate: 0.64211
+
+cc: IRR
+txt: Іранський ріал
+rate: 0.00089435
+
+cc: IQD
+txt: Іракський динар
+rate: 0.028674
+
+cc: KGS
+txt: Сом
+rate: 0.42054
+
+cc: LBP
+txt: Ліванський фунт
+rate: 0.002504
+
+cc: LYD
+txt: Лівійський динар
+rate: 7.78
+
+cc: MYR
+txt: Малайзійський ринггіт
+rate: 7.9367
+
+cc: MAD
+txt: Марокканський дирхам
+rate: 3.7502
+
+cc: PKR
+txt: Пакистанська рупія
+rate: 0.13439
+
+cc: SAR
+txt: Саудівський ріял
+rate: 10.0165
+
+cc: VND
+txt: Донг
+rate: 0.0015379
+
+cc: THB
+txt: Бат
+rate: 1.05885
+
+cc: AED
+txt: Дирхам ОАЕ
+rate: 10.2267
+
+cc: TND
+txt: Туніський динар
+rate: 12.0513
+
+cc: UZS
+txt: Узбецький сум
+rate: 0.0030243
+
+cc: TWD
+txt: Новий тайванський долар
+rate: 1.20032
+
+cc: TMT
+txt: Туркменський новий манат
+rate: 10.7322
+
+cc: RSD
+txt: Сербський динар
+rate: 0.34735
+
+cc: TJS
+txt: Сомоні
+rate: 3.4278
+
+cc: GEL
+txt: Ларі
+rate: 14.0238
+
+cc: BRL
+txt: Бразильський реал
+rate: 7.5861
+
+cc: XAU
+txt: Золото
+rate: 76602.29
+
+cc: XAG
+txt: Срібло
+rate: 870.34
+
+cc: XPT
+txt: Платина
+rate: 33542.85
+
+cc: XPD
+txt: Паладій
+rate: 33812.66
