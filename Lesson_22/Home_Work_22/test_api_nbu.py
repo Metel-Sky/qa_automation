@@ -15,6 +15,7 @@ def test_api_response_structure(api_url,exchange_rates_txt_file):
     response = requests.get(api_url)
     data = response.json()
     assert data
+    print(data)
 
 
 
