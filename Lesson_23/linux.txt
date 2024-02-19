@@ -1,0 +1,34 @@
+pwd - print work directory
+ls - list
+l- long - довгий формат
+a - all - вс≥ файли
+cd - change directory
+cd ../..
+cd ~
+
+запис файл≥в >
+дозапис файл≥в >>
+echo «апиши цей текст >proba.txt
+cat
+дл€ великих фал≥в tail, more
+cp 123.txt new_123.txt
+mv old_file.txt new_file.txt - перейменуванн€
+mkdir
+grep -i "google" por.txt
+-i не чутЇвий до рег≥стру
+which python
+whoami
+history
+man ls - ≥нструкц≥њ по команд≥
+chmod g+x ./2.txt що б забрати права використовуЇмо С-Т
+chmod g-x ./2.txt
+права доступу власника зм≥нюютьс€ через букву u chmod u-w ./2.txt
+ѕрава дл€ решти користувач≥в €к≥ не в груп≥ через букву СoТ chmod o+wx ./2.txt
+можна цифрами
+ps -aux
+top
+ps -aux | grep python | grep -v grep
+ctrl + A - перех≥д до початку стр≥чки
+ctrl + E - перех≥д до  к≥нц€ стр≥чки
+ctrl + K - очищуЇ все що з права до к≥нц€ стр≥чки.
+ctrl + U - очищуЇ все що зл≥ва до к≥нц€ стр≥чки
