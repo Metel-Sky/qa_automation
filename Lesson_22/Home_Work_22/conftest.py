@@ -25,20 +25,15 @@ def exchange_rates_data(api_url):
 
 @pytest.fixture
 def exchange_rates_txt_file(exchange_rates_data):
-
-    # Формуємо дані для кожного об'єкта в списку
     data = []
 
     for rate_data in exchange_rates_data:
         #if rate_data == "USD":
-            entry = (
-                f"cc: {rate_data['cc']}",
-                f"txt: {rate_data['txt']}",
-                f"rate: {rate_data['rate']}"
-            )
-            data.append("\n".join(entry))
+            entry = (f"{rate_data['cc']}: {rate_data['txt']} to UAH: {rate_data['rate']}")
 
-    # Записуємо дані у текстовий файл
+            data.append(entry)
+
+
     file_path = f"exchange_rates_{datetime.now().strftime('%Y%m%d_%H%M%S')}.txt"
     with open(file_path, 'w') as file:
         file.write(f"[{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}]")
