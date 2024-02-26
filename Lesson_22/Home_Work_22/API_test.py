@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 import requests
 from datetime import datetime
 
@@ -21,7 +20,7 @@ def save_to_file(exchange_data, file_path):
 
     data = [f"{rate_data['cc']}: {rate_data['txt']} to UAH: {rate_data['rate']}" for rate_data in exchange_data]
 
-    with open(file_path, 'w', encoding='utf-8') as file:
+    with open(file_path, 'w', encoding='windows-1251') as file:
         file.write(f"[{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}]\n\n")
         file.write("\n\n".join(data))
 
@@ -33,5 +32,4 @@ def main():
 
 if __name__ == "__main__":
     main()
-
 
