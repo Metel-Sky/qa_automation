@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 from selenium import webdriver
 from selenium.webdriver.common.by import By
-from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import time
@@ -29,7 +28,7 @@ def parse_olx():
                 file.write(f"Назва: {title}, Ціна: {price}\n")
 
         # Знаходимо і клікаємо на сторінку 2
-        next_page_button = driver.find_element(By.CLASS_NAME, "pageNextPrev")
+        next_page_button = driver.find_element(By.XPATH, "/html/body/div[1]/div[2]/div[2]/form/div[5]/div/section[1]/div/ul/li[2]")
         next_page_button.click()
 
         # Почекаємо, щоб сторінка 2 повністю завантажилася
