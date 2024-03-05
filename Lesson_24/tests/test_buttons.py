@@ -1,7 +1,8 @@
+# -*- coding: utf-8 -*-
 import pytest
 from selenium.webdriver.remote.webdriver import WebDriver
 
-from Lesson_24.src.pages.page_buttons import PageButtons
+from Lesson_24.src.pages.pages_buttons import PageButtons
 
 
 
@@ -18,7 +19,9 @@ class TestButtons:
         assert self.page.get_button_doubleclick_message() == 'You have done a double click'
 
     def test_right_click_button(self):
+        self.page.open()
         pass
 
-    def test_dynamic_id_click_button(self):  #кнопка Click Me
+    def test_dynamic_id_click_button(self):  #РєРЅРѕРїРєР° Click Me
+        self.page.open()
         pass
