@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 import sqlite3
 import pytest
 
@@ -16,12 +17,12 @@ def create_database():
         )
     ''')
 
-    # Додавання декількох записів
+    # Р”РѕРґР°РІР°РЅРЅСЏ РґРµРєС–Р»СЊРєРѕС… Р·Р°РїРёСЃС–РІ
     cursor.execute("INSERT INTO cars (name, model, year) VALUES ('Toyota', 'Camry', 2022)")
     cursor.execute("INSERT INTO cars (name, model, year) VALUES ('Honda', 'Civic', 2021)")
     cursor.execute("INSERT INTO cars (name, model, year) VALUES ('Ford', 'Mustang', 2020)")
 
-    # Збереження змін та закриття з'єднання
+    # Р—Р±РµСЂРµР¶РµРЅРЅСЏ Р·РјС–РЅ С‚Р° Р·Р°РєСЂРёС‚С‚СЏ Р·'С”РґРЅР°РЅРЅСЏ
     conn.commit()
     return conn
 
@@ -36,4 +37,4 @@ def test_car_name(create_database):
     assert result[0] == 'Toyota'
 
     conn.close()
-
+#qqqqqqqqqqqqqqqq
