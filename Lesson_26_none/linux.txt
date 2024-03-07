@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-
+@
 pwd - print work directory
 ls - list
 l- long - ������ ������
