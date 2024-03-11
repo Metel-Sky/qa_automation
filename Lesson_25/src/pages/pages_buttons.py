@@ -1,7 +1,7 @@
 from selenium.webdriver.common.by import By
 from selenium.webdriver.remote.webdriver import WebDriver
 
-from Lesson_24.widgets.components import Button
+from Lesson_25.widgets.components import Button
 
 class PageButtons:
     _instance = None
