@@ -1,34 +1,34 @@
 pwd - print work directory
 ls - list
-l- long - ������ ������
-a - all - �� �����
+l- long - довгий формат
+a - all - всі файли
 cd - change directory
 cd ../..
 cd ~
 
-����� ����� >
-������� ����� >>
-echo ������ ��� ����� >proba.txt
+запис файлів >
+дозапис файлів >>
+echo Запиши цей текст >proba.txt
 cat
-��� ������� ���� tail, more
+для великих фалів tail, more
 cp 123.txt new_123.txt
-mv old_file.txt new_file.txt - ��������������
+mv old_file.txt new_file.txt - перейменування
 mkdir
 grep -i "google" por.txt
--i �� ������ �� �������
+-i не чутєвий до регістру
 which python
- ls - ���������� �� ������whoami
+whoami
 history
-man
-chmod g+x ./2.txt �� � ������� ����� ������������� �-�
+man ls - інструкції по команді
+chmod g+x ./2.txt що б забрати права використовуємо ‘-’
 chmod g-x ./2.txt
-����� ������� �������� ��������� ����� ����� u chmod u-w ./2.txt
-����� ��� ����� ������������ �� �� � ���� ����� ����� �o� chmod o+wx ./2.txt
-����� �������
+права доступу власника змінюються через букву u chmod u-w ./2.txt
+Права для решти користувачів які не в групі через букву ‘o’ chmod o+wx ./2.txt
+можна цифрами
 ps -aux
 top
 ps -aux | grep python | grep -v grep
-ctrl + A - ������� �� ������� ������
-ctrl + E - ������� ��  ���� ������
-ctrl + K - ����� ��� �� � ����� �� ���� ������.
-ctrl + U - ����� ��� �� ���� �� ���� ������
+ctrl + A - перехід до початку стрічки
+ctrl + E - перехід до  кінця стрічки
+ctrl + K - очищує все що з права до кінця стрічки.
+ctrl + U - очищує все що зліва до кінця стрічки
