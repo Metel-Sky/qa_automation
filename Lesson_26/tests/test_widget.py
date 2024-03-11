@@ -1,4 +1,4 @@
-from Lesson_23.widgets.components import ExpandableTreeElement, Button
+from Lesson_26.widgets.components import ExpandableTreeElement, Button
 
 
 class TestWidgets:

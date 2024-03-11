@@ -1,7 +1,7 @@
 import pytest
 from selenium.webdriver.remote.webdriver import WebDriver
 
-from Lesson_24.src.pages.page_buttons import PageButtons
+from Lesson_25.src.pages.page_buttons import PageButtons
 
 
 

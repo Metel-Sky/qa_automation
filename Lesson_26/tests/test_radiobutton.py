@@ -1,6 +1,6 @@
 from selenium.webdriver.common.by import By
 
-from Lesson_23.RadioButtonPage import RadioButton
+from Lesson_26.RadioButtonPage import RadioButton
 
 
 def test_radio(chrome):

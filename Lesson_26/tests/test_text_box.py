@@ -1,6 +1,6 @@
 import pytest
 
-from Lesson_22.TextBoxPage import TextBoxPage
+from Lesson_26.TextBoxPage import TextBoxPage
 
 class TestTextBox:
 

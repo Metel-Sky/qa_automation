@@ -1,7 +1,7 @@
 from selenium.webdriver.remote.webelement import WebElement
 
-from Lesson_22.DynamicPropertiesPage import PageDynamicProperties
-from Lesson_22.ElementsPage import ElementsPage
+from Lesson_25.DynamicPropertiesPage import PageDynamicProperties
+from Lesson_25.ElementsPage import ElementsPage
 import pytest
 
 

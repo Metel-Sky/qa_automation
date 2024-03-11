@@ -1,5 +1,5 @@
 import pytest
-from Lesson_22.CheckboxPage import CheckboxPage
+from Lesson_25.CheckboxPage import CheckboxPage
 
 @pytest.mark.usefixtures("chrome_class")
 class TestCheckboxPage:
