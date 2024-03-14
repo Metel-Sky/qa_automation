@@ -19,7 +19,8 @@ class TestButtons:
         assert self.page.get_button_doubleclick_message() == 'You have done a double click'
 
     def test_right_click_button(self):
-        self.page.open()
+        # self.page.open()
+        # self.page.get_button_right_click_message()
         pass
 
     def test_dynamic_id_click_button(self):  #кнопка Click Me
