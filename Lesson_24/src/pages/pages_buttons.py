@@ -39,3 +39,6 @@ class PageButtons:
 
     def get_button_dynamic_id_click_message(self) -> str:
         return self.driver.find_element(*self.button_dynamic_id_click_message_loc).text
+
+    def dymanic_id_click_button(self):
+        return self.driver.find_element(*self.button_dynamic_id_click_message_loc).text

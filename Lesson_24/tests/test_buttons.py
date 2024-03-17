@@ -18,12 +18,12 @@ class TestButtons:
         self.page.button_doubleclick().doubleclick()
         assert self.page.get_button_doubleclick_message() == 'You have done a double click'
 
-    def test_right_click_button(self):
+    def test_right_click_button(self): # Right Click Me
         self.page.open()
         self.page.right_click_button().right_click()
         assert self.page.get_button_right_click_message() == 'You have done a right click'
 
-    def test_dynamic_id_click_button(self):  # кнопка Click Me
+    def test_dynamic_id_click_button(self):  # Click Me
         self.page.open()
         self.page.dymanic_id_click_button().click()
         text = self.page.get_button_dynamic_id_click_message()
