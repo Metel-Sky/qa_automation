@@ -40,7 +40,7 @@ class PagePracticeForm:
     def get_result_from_dropdown(self) -> list:
         elements = self.driver.find_elements(*self.locator)
         result = [element.text for element in elements]
-        return resultfrom selenium.webdriver import Keys
+        #return resultfrom selenium.webdriver import Keys
 from selenium.webdriver.common.by import By
 from selenium.webdriver.remote.webdriver import WebDriver
 from selenium.webdriver.support import expected_conditions as ec
