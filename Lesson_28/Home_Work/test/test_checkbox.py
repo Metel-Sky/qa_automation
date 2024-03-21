@@ -4,7 +4,6 @@ from Lesson_28.Home_Work.CheckBoxPage import CheckboxPage
 
 @pytest.mark.usefixtures("chrome_class")
 class TestCheckboxPage:
-
     def setup(self):
         self.page = CheckboxPage(self.driver)
 
