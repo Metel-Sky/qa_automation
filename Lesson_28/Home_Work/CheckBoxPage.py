@@ -21,3 +21,4 @@ class CheckboxPage:
     def get_result_check_folder(self):
         result = self.driver.find_element(By.CSS_SELECTOR, 'span.text-success').text
         return result
+#тут може бути ваша реклама=)
